@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"it.map1920.regtreeClient"},{"l":"it.map1920.regtreeClient.controller"},{"l":"it.map1920.regtreeClient.ui"}]

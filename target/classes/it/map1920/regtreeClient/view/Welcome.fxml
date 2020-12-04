@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="440.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.map1920.regtreeClient.controller.WelcomeController">
+   <bottom>
+      <Button fx:id="btn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="55.0" prefWidth="169.0" style="-fx-background-color: #04395E;" text="Start" textAlignment="CENTER" textFill="WHITE" translateY="-25.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Nunito Regular" size="21.0" />
+         </font>
+      </Button>
+   </bottom>
+   <top>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="18.0" prefWidth="440.0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="285.0" prefWidth="440.0">
+               <children>
+                  <ImageView fitHeight="170.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../images/undraw_data_reports_706v.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#04395e" strokeType="OUTSIDE" strokeWidth="0.0" text="Acquisisci i dati dal tuo database oppure carica un file dall'archivio, poi percorri l'albero di regressione." textAlignment="CENTER" wrappingWidth="414.525390625">
+                     <font>
+                        <Font name="Nunito Regular" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

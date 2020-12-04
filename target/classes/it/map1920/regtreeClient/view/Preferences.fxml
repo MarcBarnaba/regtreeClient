@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="14.0" maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.map1920.regtreeClient.controller.PreferencesController">
+  <children>
+    <VBox maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" prefWidth="400.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+      <children>
+            <Text fill="#04395e" strokeType="OUTSIDE" strokeWidth="0.0" text="Impostazioni">
+               <font>
+                  <Font name="Nunito Regular" size="21.0" />
+               </font></Text>
+            <CheckBox fx:id="enableWelcome" mnemonicParsing="false" selected="true" text="Mostra schermata di benvenuto">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin></CheckBox>
+            <VBox prefHeight="126.0" prefWidth="400.0" spacing="15.0" style="-fx-background-color: #ffdba1;">
+               <children>
+                  <Text fill="#04395e" strokeType="OUTSIDE" strokeWidth="0.0" text=" Connessione">
+                     <font>
+                        <Font name="Nunito Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" spacing="15.0">
+                     <children>
+                        <TextField fx:id="serverAddress" alignment="BASELINE_RIGHT" prefHeight="27.0" prefWidth="194.0">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label prefHeight="20.0" prefWidth="162.0" text="Indirizzo Server">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="52.0" nodeOrientation="RIGHT_TO_LEFT" spacing="15.0">
+                     <children>
+                        <TextField fx:id="portNumber" alignment="BASELINE_RIGHT" prefHeight="27.0" prefWidth="194.0">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label prefHeight="20.0" prefWidth="162.0" text="Numero di Porta">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+      </children>
+    </VBox>
+    <HBox maxHeight="-Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <children>
+        <HBox fx:id="actionParent" alignment="CENTER">
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+        </HBox>
+        <Pane maxWidth="+Infinity" HBox.hgrow="ALWAYS" />
+        <Button fx:id="cancelButton" cancelButton="true" minWidth="80.0" mnemonicParsing="false" onAction="#onCancelBtnPressed" style="-fx-background-color: #04395E;" text="Cancel" textFill="WHITE" HBox.hgrow="NEVER">
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+               <font>
+                  <Font name="Nunito Regular" size="13.0" />
+               </font>
+        </Button>
+        <HBox fx:id="okParent" alignment="CENTER">
+          <children>
+            <Button fx:id="saveButton" minWidth="80.0" mnemonicParsing="false" onAction="#onSaveBtnPressed" style="-fx-background-color: #F9A826;" text="Save" textFill="#04395e" HBox.hgrow="NEVER">
+              <HBox.margin>
+                <Insets left="14.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+      </children>
+    </HBox>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" />
+    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="+Infinity" minWidth="-Infinity" />
+  </columnConstraints>
+  <padding>
+    <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+  </padding>
+  <rowConstraints>
+    <RowConstraints maxHeight="+Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="ALWAYS" />
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER" />
+  </rowConstraints>
+</GridPane>

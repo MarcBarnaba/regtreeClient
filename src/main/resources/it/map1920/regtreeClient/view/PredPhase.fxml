@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.map1920.regtreeClient.controller.PredPhaseController">
+  <children>
+    <MenuBar fx:id="menuBar" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Help" />
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="371.0" prefWidth="640.0" style="-fx-background-color: FFFFFF;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="371.0" prefWidth="339.0" spacing="10.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text fx:id="question" fill="#04395e" strokeType="OUTSIDE" strokeWidth="0.0" text="Quale valore per ">
+                           <font>
+                              <Font name="Nunito Regular" size="17.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="optionsContainer" alignment="CENTER_LEFT" maxHeight="224.0" prefHeight="224.0" prefWidth="312.0" spacing="10.0">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </VBox>
+                        <Button fx:id="nextBtn" alignment="CENTER" mnemonicParsing="false" onAction="#onNextBtnPressed" prefHeight="55.0" prefWidth="170.0" style="-fx-background-color: #04395E;" text="Next" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Nunito Regular" size="21.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="againBtn" alignment="CENTER" disable="true" layoutX="82.0" layoutY="209.0" mnemonicParsing="false" onAction="#onAgainBtnPressed" prefHeight="45.0" prefWidth="170.0" style="-fx-background-color: #F9A826;" text="Again" textAlignment="CENTER" textFill="#04395e" visible="false">
+                           <font>
+                              <Font name="Nunito Regular" size="21.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="homeBtn" alignment="CENTER" disable="true" layoutX="82.0" layoutY="234.0" mnemonicParsing="false" onAction="#onHomeBtnPressed" prefHeight="45.0" prefWidth="170.0" style="-fx-background-color: #04395e;" text="Change Dataset" textAlignment="CENTER" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Nunito Regular" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="371.0" prefWidth="355.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="221.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/undraw_data_processing_yrrv.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
