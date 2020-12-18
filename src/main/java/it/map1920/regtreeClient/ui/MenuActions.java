@@ -91,11 +91,11 @@ public class MenuActions {
 		// User Guide
 		EventHandler<ActionEvent> eventmh2 = new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent e) {
-				// TODO: Apre il file con la guida utente
+				vl.loadUserGuide();
 			}
 		};
 
-		// add event
+		// add event to recent tables
 		mf1.setOnAction(eventmf1);
 		menuRecent.getItems().forEach(item -> {
 			item.setOnAction(new EventHandler<ActionEvent>() {

@@ -15,6 +15,10 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
+
+
 
 
 /**
@@ -188,6 +192,20 @@ public class ViewLoader {
 		       e.printStackTrace();
 		      }
 		
+	}
+	
+	/**
+	 * Carica la guida utente
+	 */
+	public void loadUserGuide() {
+		WebView webView = new WebView();
+        WebEngine webEngine = webView.getEngine();
+        webEngine.load( getClass().getResource("/it/map1920/regtreeClient/usermanual.html").toString() );
+
+        Stage newStage = new Stage();
+        newStage.setTitle("Manuale");
+		newStage.setScene(new Scene(webView));
+		newStage.show();
 	}
     
 }
