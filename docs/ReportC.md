@@ -3,12 +3,9 @@
 ## Indice
 1. Introduzione
 2. Guida Installazione
-4. 00 Design
-    * Diagrammi delle classi
-    * Commenti sulle decisioni prese
+3. Diagrammi delle classi
 4. Riepilogo del test    
 5. Manuale utente
-6. Conclusioni
 
 
 
@@ -51,11 +48,25 @@ Il progetto utilizza la versione 14.0.1 di JavaFX, come è possibile notare dai 
 
 Per ulteriori informazioni, è possibile consultare [questa](https://openjfx.io/openjfx-docs/) pagina.
 
-## 3. Object-oriented Design
+## 3. Diagramma delle classi
 
-### Diagramma delle classi
+ ![it.map1920.regtreeClient](/docs/uml/default.png "it.map1920.regtreeClient")
 
- <img src="//classDiagram.jpg" width="600">
+ Il package it.map1920.regtreeClient contiene:
+ - Settings, una classe per conservare e gestire le preferenze dell'utente e ricordare le tabelle recenti
+ - Connection, una classe per gestire lo scambio di messaggi con il server durante le fasi di connessione, learning e prediction.
+
+![it.map1920.regtreeClient.controller](/docs/uml/controller.png "it.map1920.regtreeClient.controller")
+
+Il package it.map1920.regtreeClient.controller contiene una classe Controller per ogni View presente nell'applicazione. I Controller utilizzano fxid delle componenti fxml per gestirle e impostano le azioni da eseguire in relazione ad azioni effettuate dall'utente.
+
+![it.map1920.regtreeClient.ui](/docs/uml/ui.png "it.map1920.regtreeClient.ui")
+
+La classe MenuActions gestisce la barre dei Menu e la inizializza sempre uguale in ogni vista. 
+La classe ViewLoader, invece, offre metodi per sollevare degli Alert e per cambiare la Scene nello Stage dell'applicazione.
+
+
+
 
 
 ## 4. Riepilogo del test 
@@ -126,5 +137,3 @@ Le impostazioni permettono di scegliere se visualizzare la schermata di benvenut
 
 
 
-
-## 6. Conclusioni
