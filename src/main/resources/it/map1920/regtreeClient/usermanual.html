@@ -1,0 +1,48 @@
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Nunito', sans-serif;">
+<h2 style="text-align: center;"><span style="color: #04395e;">Manuale utente</span></h2>
+<div>
+<h3><span style="color: #04395e;">Avvio attraverso Jar eseguibile</span></h3>
+<br />
+<div>E' possibile avviare sia il Server che il Client utilizzando i relativi file.jar e utilizzando gli argomenti previsti:</div>
+<br />
+<div><code>java -jar MapBCServer.jar [PortNumber]</code></div>
+<div><code>java -jar MapBCClient.jar [NomeServer, PortNumber]</code></div>
+<br /><br /><br />
+<h3><span style="color: #04395e;">Server</span></h3>
+<br />
+<div>Avviata l'applicazione, il server conferma la sua attivit&agrave; visualizzando una stringa a video, e in generale fornisce sempre un feedback su quello che sta avvenendo o &egrave; avvenuto.</div>
+<br />
+<h4><span style="color: #04395e;">Esempi:</span></h4>
+<br />
+<div><code>Started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080]</code></div>
+<br />
+<div><code>Connessione accettata: Socket[addr=/127.0.0.1,port=65358,localport=8080]</code></div>
+<br />
+<div><code>Starting data acquisition phase!</code></div>
+<br />
+<div><code>closing...</code></div>
+<br /><br />
+<h3><span style="color: #04395e;">Client</span></h3>
+<br />
+<div>Avviato, il client permette all'utente di scegliere se costruire l'albero di regressione a partire da una tabella del database o da una gi&agrave; analizzata e presente in archivio.</div>
+<br />
+<div><code>Learn Regression Tree from database [1]</code></div>
+<div><code>Load Regression Tree from archive [2]</code></div>
+<br />
+<div><code>File name:</code></div>
+<br />
+<div>Una volta inserito il nome, il sistema effettuer&agrave; le operazioni necessarie a iniziare la fase di previsione. In questa fase l'utente deve digitare il numero corrispondente al percorso che vuole seguire fino al nodo foglia dell'albero, il classvalue cercato.</div>
+<br />
+<div><code>Starting data acquisition phase!</code></div>
+<div><code>Starting learning phase!</code></div>
+<div><code>Starting prediction phase!</code></div>
+<div><code>0:X=A</code></div>
+<div><code>1:X=B</code></div>
+<br />
+<div>Al termine, il sistema visualizza il classvalue per la regola costruita e permette di ripetere la fase di previsione oppure terminare l'esecuzione.</div>
+</div>
+</body>
